@@ -1,0 +1,12 @@
+.row {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: auto;
+  width: auto;
+}
+
+p {
+  background-color: gray;
+}
+/*# sourceMappingURL=style.css.map */

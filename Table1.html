@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Table1</title>
+    <style>
+      .head {
+        color: white;
+        background-color: rgb(16, 80, 16);
+        border-collapse: collapse;
+      }
+      .round-corner {
+        border-radius: 4px;
+      }
+      table {
+        border-collapse: collapse;
+        border: 2px rgb(16, 80, 16);
+        margin: 0px auto;
+        font-family: "sans-serif";
+        width:25%;
+        background-color: honeydew;
+        animation: mymove 5s infinite;
+       
+      }
+      @keyframes mymove {
+  from {background-color: red;}
+  to {background-color: blue;}
+}
+
+      td {
+        padding: 10px;
+      }
+
+      th {
+        padding: 10px;
+      }
+
+      .row2 {
+        color: rgb(230, 138, 18);
+        background-color: #e8e8e8;
+        border-collapse: collapse;
+      }
+      .row3 {
+        border-bottom:2px solid rgb(8, 1, 1);
+      }
+      .border-right {
+        border-top-right-radius: 25px;
+      }
+      .border-left {
+        border-top-left-radius: 25px;
+      }
+    </style>
+  </head>
+  <body>
+    <table class="round-corner">
+      <thead>
+        <tr align="left" class="head">
+          <th class="border-left">Rank</th>
+          <th >Name</th>
+          <th >Points</th>
+          <th class="border-right">Team</th>
+        </tr>
+      </thead>
+      <tr>
+        <td>1</td>
+        <td>Domestic</td>
+        <td>88,40</td>
+        <td>dcode</td>
+      </tr>
+      <tr class="row2">
+        <td>2</td>
+        <td>Domest</td>
+        <td>88,40</td>
+        <td>code</td>
+      </tr>
+      <tr class="row3">
+        <td>3</td>
+        <td>estic</td>
+        <td>848,40</td>
+        <td>dode</td>
+      </tr>
+    </table>
+  </body>
+</html>

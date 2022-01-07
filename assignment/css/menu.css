@@ -1,0 +1,28 @@
+.vertical ul,li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px 100px;
+
+}
+.horizontal ul,li{
+  display: inline;
+  list-style-type: none;
+  padding: 50px 10px;
+}
+a{
+  text-decoration: none;
+}
+
+.vertical{
+  background-color: rgb(229, 255, 0);
+  border: 1px solid black;
+}
+
+.horizontal{
+  background-color: rgb(255, 38, 0);
+  border: 1px solid black;
+  height:500px;
+  width:60px;
+  text-align: center;
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Table</title>
+  <style>
+
+   table,td,th {
+     border: 10px solid black;
+     border-width:2px ;
+     border-collapse: collapse;
+     text-align: center; 
+     padding: 15px;
+   } 
+   .office{
+     background-color: blanchedalmond;
+   }
+   .mat{
+     background-color:#24f724;
+   }
+   .dept{
+     background-color:#e7e3e3;
+   }
+   .csc{
+     background-color:#fdbfc6;
+   }
+  </style>
+</head>
+
+<body>
+ <table>
+   <tr>
+     <th></th>
+   <th>Monday</th>
+   <th>Tuesday</th>
+   <th>Wednesday</th>
+   <th>Thursday</th>
+   <th>Friday</th>
+   </tr>
+  
+   <tr>
+     <td>1:00</td>
+     <td rowspan="2" class="office">Office</td>
+     <td></td>
+     <td rowspan="2" class="office">Office</td>
+     <td rowspan="8" class="office">Office Hours by Appt</td>
+     <td rowspan="2" class="office">Office</td>
+   </tr>
+    <tr>
+     <td>1:30</td>
+     <td rowspan="2" class="dept">Deep Meeting</td>
+   </tr>
+    <tr>
+     <td>2:00</td>
+     <td rowspan="3" class="mat">MAT 108</td>
+      <td rowspan="3" class="mat">MAT 108</td>
+      <td rowspan="3" class="mat">MAT 108</td>
+   </tr>
+    <tr>
+     <td>2:30</td>
+    <td></td>
+   </tr>
+    <tr>
+     <td>3:00</td>
+     <td rowspan="3" class="dept">EC Meeting</td>
+   </tr>
+    <tr>
+     <td>3:30</td>
+     <td rowspan="3" class="csc">CSC 205</td>
+     <td rowspan="3" class="csc">CSC 205</td>
+     <td rowspan="3" class="csc">CSC 205</td>
+   </tr>
+    <tr>
+     <td>4:00</td>
+   </tr>
+    <tr>
+     <td>4:30</td>
+     <td></td>
+     
+   </tr>
+ 
+ </table>
+  
+</body>
+</html>

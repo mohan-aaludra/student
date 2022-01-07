@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Border-boxing</title>
+  <style>
+    body{
+      margin: 200px 400px;
+    }
+    .yellow{
+      width: 600px;
+      height: 70px;
+      border: 2px solid yellow;
+      margin: 5px;;  
+    }
+    .logo{
+     border: 2px solid red;
+     width: 120px;
+     height: 55px;
+     margin: 5px 70px 0px 5px;
+   }
+   .img{
+      border: 2px solid green;
+     width: 450px;
+     height: 55px;
+     margin: 5px;
+   }
+   .small-blue{
+     width: 80px;
+     border: 2px solid blue;
+     height:40px;
+     margin: 5px 10px;
+     
+   }
+   .red{
+     border: 2px solid red;
+     width: 600px;
+     height: 240px;
+    
+   }
+    .green{
+     border: 3px solid green;
+     width: 610px;
+     height: auto;
+     margin: 2px;
+     padding: 5px;
+    
+   }
+   .blue{
+     border: 2px solid blue;
+     width: 100px;
+     height: 180px;
+    margin: 50px 50px;
+   }
+    .blue1{
+     border: 2px solid blue;
+     width: 100px;
+     height: 140px;
+    margin: 50px 50px;
+   }
+   
+  </style>
+</head>
+<body>
+  <div class="green">
+
+    <div class="yellow">
+      <div style="display:flex;">
+      <div class="logo">
+        Logo
+      </div>
+       <div class="img">
+         <div style="display:flex;flex-direction:row-reverse;">
+            <div class="small-blue">img</div>
+            <div  class="small-blue">img</div>
+            <div  class="small-blue">img</div>
+         </div>
+       
+      </div>
+      </div>
+    </div>
+
+      <div class="red">
+      <div style="display:flex;">
+          <div class="blue">Box1</div>
+          <div class="blue1">Box2</div>
+          <div class="blue">Box3</div>  
+      </div>
+      </div>
+  </div>
+  <script>
+    //shallow copy=>It will change its reference also to avoid spread operator or object.assign.
+
+  //   let arr={[num1:1,num2:2,num3:3]};
+  //  console.log(typeof(arr));
+
+    let nestedobj={a:1,b:2,c:3};
+    // console.log(nestedobj);  
+    let copyobj=Object.assign({},nestedobj)
+    copyobj.a=10;
+    console.log('copyobj',copyobj);
+    console.log('nestedobj',nestedobj);
+
+    //nested loop 
+
+    // let obj={a:10,b:{c:20,d:30}};
+    // console.log(obj);
+    // let objcopy={...obj};
+    // objcopy.a=15;
+    // objcopy.b.c=25;
+    // console.log(objcopy);
+    // console.log(obj);
+
+    //to avoid this use double spredoperator;
+
+    let obj={a:10,b:{c:20,d:30}};
+    console.log(obj);
+    let objcopy={...obj,b:{...obj}};
+    objcopy.a=15;
+    objcopy.b.c=25;
+    console.log(objcopy);
+    console.log(obj);
+
+    //Deep copy
+
+    let dell={a:10,b:{c:20,d:30}};
+
+    // dell.a=50;
+    // console.log(dell);
+
+    let hp=JSON.parse(JSON.stringify(dell))
+    hp.a=50;
+    console.log('hp',hp);
+    console.log('dell',dell);
+
+    //map function
+
+    let newmap=[1,2,3]
+    let copymap = newmap.map(el => el)
+    copymap[1] = 4
+    console.log('newmap',newmap);
+    console.log('copymap',copymap);
+
+
+  </script>
+  <!-- object destsructing,map,filter,reduce,call back funcion -->
+</body>
+</html>

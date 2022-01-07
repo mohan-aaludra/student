@@ -1,0 +1,41 @@
+html{
+  background-color: crimson;
+}
+body {
+  background-color: burlywood;
+  width: 800px;
+  height: 800px;
+  margin: 0 auto;
+}
+.column {
+  border: 1px solid black;
+  width: 25%;
+  height: 200px;
+  margin: 20px;
+  display: inline-block;
+  background-color: chartreuse;
+}
+@media only screen and (max-width:425px){
+body{
+  background-color:yellow ;
+}
+.column{
+  width: 90%;
+}
+}
+@media only screen and (max-width:768px) and (min-width:426px){
+  body{
+    background-color: rgb(205, 73, 50);
+  }
+  .column{
+    width:50%;
+  }
+}
+@media only screen and (max-width:1024px) and (min-width:769px){
+  body{
+    background-color: rgb(25, 26, 23);
+  }
+  .column{
+    width:25%;
+  }
+}

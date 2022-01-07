@@ -1,0 +1,41 @@
+
+body{
+  width:700px;
+  height:700px;
+  font-family: 'Times New Roman', Times, serif;
+  background-color: cornsilk;
+}
+h2{
+  font-size: 20px;
+  color: blue;
+}
+p{
+  font-size: 15px;
+}
+#para1{
+  color: darkgreen;
+  text-align: left;
+}
+.para-2-4{
+  color: red;
+  text-align: center;
+}
+.para-3-5{
+  color: brown;
+  text-align:right;
+}
+.padding{
+  color: blueviolet;
+  background-color: cadetblue;
+  padding:50px;
+  /* box-sizing: border-box; */
+  
+}
+.margin{
+  margin: 30px;
+  border: 1px solid green;
+}
+.size{
+  width: 300px;
+  height: 200px;
+}

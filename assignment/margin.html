@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Margin&Padding</title>
+  <style>
+body{
+  border: 2px solid black;
+  margin:0px;
+  padding: 0px;
+} 
+.header{
+  width: 100%;
+  height: 100px;
+  border: 2px solid black;
+  margin-bottom: 5px;
+}
+.footer{
+  width: 94.50%;
+  height: 100px;
+  border: 2px solid black;
+  margin:0 65px;
+  
+}
+
+.div1{
+  width:30.38%;
+  height:200px;
+  border: 7px solid rgb(92, 167, 23);
+  display: inline-block;
+  margin: 2px 0px;
+  overflow: hidden;
+  overflow: scroll;
+
+}
+.div1::-webkit-scrollbar{
+width:1em;
+}
+.div1::-webkit-scrollbar-thumb{
+background-color: red;
+}
+.div2::-webkit-scrollbar{
+width:1em;
+}
+.div2::-webkit-scrollbar-thumb{
+background-color: rgb(245, 229, 6);
+}
+.div2{
+  width:30.38%;
+  height:200px;
+  border: 7px solid rgb(231, 10, 10);
+  display: inline-block;
+  margin-bottom:3px;
+  /* overflow: hidden; */
+  overflow: scroll;
+
+}
+h3{
+  text-align: center;
+}
+h4{
+  text-align: center;
+}
+.img{
+  width: 100px;
+  height: 40px;
+  margin-left:153px;
+}
+h2{
+  text-align: center;
+  font-size: 50px;
+  color:black;
+  margin:10px 585px 0px;
+  border: 4px solid orange;
+  display: inline;
+  position: absolute;
+}
+.vertical li{
+  display: inline-block;
+  list-style-type: none;
+  padding: 20px;
+  height: 8%;
+
+}
+.vertical{
+  background-color: rgb(229, 255, 0);
+  border: 1px solid black;
+}
+.horizontal{
+  background-color: rgb(12, 8, 7);
+  border: 1px solid black;
+  height:538px;
+  width:60px;
+  text-align: center;
+  float: left;
+  margin :2px 3px 0px 0px;
+}
+.horizontal a {
+    text-decoration: none;
+    color: chartreuse;
+  display: block;
+ padding:45px;
+ margin-left: 20px;
+}
+.horizontal ul{
+  list-style-type: none;
+  margin-left: -168%;
+
+}
+.vertical a{
+  text-decoration: none;
+  padding: 100px;
+}
+
+</style>
+</head>
+<body>
+
+  <header  class="">
+
+   <div class="vertical">
+
+<ul>
+  <li><a href="#"> Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Gallery</a></li>
+  <li><a href="#">contact</a></li>
+</ul>
+
+</div>
+  </header>
+
+<div>
+
+<div>
+
+<div class="horizontal">
+
+<ul>
+  <li><a href="#"> Home</a></li>
+  <li><a href="#">About</a></li>
+  <li><a href="#">Gallery</a></li>
+  <li><a href="#">contact</a></li>
+</ul>
+
+</div>
+
+    
+    <div class="div1">
+            <h3>Maruthi</h3>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fuga delectus soluta ab libero quibusdam optio magni at officia, nostrum veritatis harum sint dolorum illo magnam debitis molestias asperiores suscipit!</h4> <div><img class="img" src="img/alto.jpg"></div>
+    </div>
+          
+        <div class="div1">
+          <h3>Maruthi</h3>
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fuga delectus soluta ab libero quibusdam optio magni at officia, nostrum veritatis harum sint dolorum illo magnam debitis molestias asperiores suscipit!</h4>    <div><img class="img" src="img/wagonr.jpeg"></div>
+
+        </div>
+
+        <div class="div1">
+          <h3>Maruthi</h3>
+          <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fuga delectus soluta ab libero quibusdam optio magni at officia, nostrum veritatis harum sint dolorum illo magnam debitis molestias asperiores suscipit!</h4>    <div><img class="img" src="img/swift.jpg"></div>
+        </div>
+   </div>
+
+
+
+    <div>
+          <div class="div2">
+            <h3>Maruthi</h3>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fuga delectus soluta ab libero quibusdam optio magni at officia, nostrum veritatis harum sint dolorum illo magnam debitis molestias asperiores suscipit!</h4>        <div><img class="img" src="img/breeze.jfif"></div>
+          </div>
+
+          <div class="div2">
+            <h3>Maruthi</h3>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fuga delectus soluta ab libero quibusdam optio magni at officia, nostrum veritatis harum sint dolorum illo magnam debitis molestias asperiores suscipit!</h4>
+            <div><img class="img" src="img/swift.jpg"></div>
+          </div>
+
+          <div class="div2">
+            <h3>Maruthi</h3>
+            <h4>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Beatae fuga delectus soluta ab libero quibusdam optio magni at officia, nostrum veritatis harum sint dolorum illo magnam debitis molestias asperiores suscipit!</h4>        <div><img class="img" src="img/car2.jfif"></div>
+          </div>
+    </div>
+</div>
+
+  
+   
+  <footer class="footer">
+    <h2>Footer</h2>
+  </footer>
+</body>
+</html>
+
+<!-- //header->-width=100%,heigt-150px;
+//six Div(img,heading-1,heading-2)->600px;
+//footer->width->100%,heighht->50px; -->

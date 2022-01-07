@@ -1,0 +1,142 @@
+body{
+  background-color: #f2f1f2;
+}
+.align-left{
+  flex-basis: 60%;
+}
+.align-right{
+  flex-basis: 30%;
+}
+.row {
+  display: flex;
+  align-items:flex-start;
+ 
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+}
+.row-right{
+  /* display: flex; */
+  /* align-items:flex-start; */
+  background-color:#e2f0f5;
+  /* flex-wrap: wrap; */
+}
+.space{
+  justify-content: space-between;
+  display: flex;
+}
+.row-li{
+  font-weight: bold;
+}
+.row-li2{
+  font-weight: 100;
+  color: #46bdea;
+  font-size: 16px;
+}
+.row-odd{
+  display: flex;
+  align-items:flex-start;
+  background-color:white;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+}
+.row-even{
+  display: flex;
+  align-items:flex-start;
+  background-color:#f2f1f2;
+  /* flex-wrap: wrap; */
+  /* justify-content: space-around; */
+}
+.nav2{
+  display: flex;
+  justify-content: space-between;
+  background-color:#f2f1f2 ;
+  height: 40px;
+}
+.nav3{
+  display: flex;
+  justify-content: space-between;
+  background-color: lightgray;
+  margin-top: 15px;
+}
+.nav3 li{
+  list-style-type:none;
+  /* margin-top: 5px; */
+}
+.nav2 li{
+  list-style-type:none;
+  /* margin-top: 5px; */
+}
+#active{
+  background-color: #46bdea;
+}
+.content-img{
+  height: 20px;
+  width: 20px;
+}
+.content-car{
+  height: 55px;
+  width: 120px;
+}
+/* .container {
+  max-width: 1300px;
+  margin: auto;
+  padding-left: 25px;
+  padding-right: 25px;
+} */
+/* -----------------foooter---------- */
+
+.footer {
+  background: #e2f0f5;
+  color: #46bdea;
+  font-size: 14px;
+  /* padding: 60px 0 20px; */
+   /* margin-left: 50px; */
+  margin-right: 120px;
+  margin-top: 50px;
+}
+
+.footer p {
+  color: black;
+  text-align: left;
+}
+.footer h3 {
+  color:#007cc0;
+  margin-bottom: 20px;
+}
+
+.footer-col{
+  text-align: left;
+}
+.dual{
+  width: 25px; 
+  height: 40px; 
+  margin-right:10px;
+}
+ul {
+  list-style-type: none;
+}
+.app-logo {
+  margin-top: 20px;
+}
+/* select,input{
+  padding:5px;
+} */
+.app-logo img {
+  width: 30px;
+}
+.footer hr {
+  border: none;
+  background: #007cc0;
+  height: 5px;
+  margin: 20px 0;
+}
+.copyright {
+  text-align: center;
+  color: black;
+}
+
+.b-style{
+  color: white;
+  background-color: blue;border:
+   none;padding: 3px;
+}

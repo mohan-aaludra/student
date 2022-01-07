@@ -1,0 +1,39 @@
+body{
+  margin: 10%;
+  padding: 5%;
+  border: 2px solid green ;
+  font-size:18px;
+
+}
+.hr-color{
+  border: 5px solid green;
+}
+.heading{
+  text-align: center;
+}
+.para{
+  text-indent: 50px;
+  line-height: 1.5;
+}
+.table{
+  border-collapse: collapse;
+  text-align: center;
+  
+}
+.th-td{
+  border: 2px solid rgb(179, 83, 4);
+}
+.img{
+  width: 5px;
+  height: 5px;
+}
+
+fieldset{
+  margin-right:50%;
+}
+ul >li{
+  list-style-image:url(../img/download\ \(1\).png);
+}
+h3{
+  text-decoration: underline
+}
